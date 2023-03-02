@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Boostrap</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .Form{
+            margin: 2%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Belajar Linux</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Daftar.html">Daftar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Data.html">Data Pendaftaran</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">404</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="Form">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="">
+              <div id="emailHelp" class="form-text">Kami tidak akan memberikan data Anda pada siapapun.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label">Nama Lengkap</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputNPM" class="form-label">NPM</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <label for="exampleInputSemester" class="form-label">Semester</label>
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Pilih salah satu</option>
+                  <option value="1">Semester 1</option>
+                  <option value="2">Semester 2</option>
+                  <option value="3">Semester 3</option>
+                  <option value="4">Semester 4</option>
+                  <option value="5">Semester 5</option>
+                  <option value="6">Semester 6</option>
+                  <option value="7">Semester 7</option>
+                </select>
+                <label for="floatingSelect">Semester saat ini</label>
+              </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Saya menyetujui</label>
+            </div>
+            <div class="form-floating">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="bootstrap.min.js"></script>
+</html>
