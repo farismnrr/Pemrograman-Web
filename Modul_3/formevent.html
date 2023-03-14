@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Click</title>
+</head>
+<body>
+    <script lang="javascript">
+        function calc1(form){
+            var a = form.a.value / 100
+            var b = a * form.b.value
+            form.total1.value = b
+        }
+    </script>
+
+    <form name="form">
+        Persentase: <input type="text" name="a" size="5"><br>
+        Angka di Persentase: <input type="text" name="b" size="5"><br>
+        <input type="button" value="calculate" onclick="calc1(document.form)"><br>
+        <input type="text" name="total1" size="5" maxlength="40">
+    </form>
+</body>
+</html>

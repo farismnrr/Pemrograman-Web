@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array JS</title>
+</head>
+<body>
+    
+</body>
+<script language="javascript">
+    var hari = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu")
+    var bulan = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "July", "Agustus", "September", "Oktober", "November", "Desember")
+    var t = new Date()
+    var hari_ini = hari[t.getDay()]
+    var tanggal = t.getDate()
+    var bulan_ini = bulan[t.getMonth()]
+    var tahun = t.getFullYear()
+    document.write("<b><center> Sekarang adalah hari: ", hari_ini, "<br>Tanggal: ", tanggal, "<br>Bulan: ", bulan_ini, "<br>Tahun: ", tahun)
+
+    document.write("<br><br>")
+    var t = new Date()
+    var jam = t.getHours()
+    var menit = t.getMinutes()
+    var detik = t.getSeconds()
+    document.write("<b> <center> sekarang ini jam menunjukkan pukul: <h3>" + jam + ":" + menit + ":" + detik + "<br><br>")
+    
+    document.write("<b><center> Daftar Hari: </b><br>")
+    for (var i = 0; i < hari.length; i++) {
+        document.write(hari[i] + "<br>")
+    }
+
+    document.write("<br><b><center> Daftar Bulan: </b><br>")
+    for (var i = 0; i < bulan.length; i++) {
+        document.write(bulan[i] + "<br>")
+    }
+</script>
+</html>

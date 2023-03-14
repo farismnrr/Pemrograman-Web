@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Validasi Form</title>
+        <script language="JavaScript" src="isValid.js"></script>
+        <script language="JavaScript">
+            function validasi(){
+                isAlphabet(document.getElementById('nama'), 'Nama hanya boleh alfabet')
+                
+                isAlphanumeric(document.getElementById('email'), 'Email hanya boleh alfanumerik')
+
+                sAlphanumeric(document.getElementById('alamat'), 'Alamat hanya boleh alfanumerik')
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <form>
+            <pre>
+                Nama :
+                <input type="text" name="txtnama" id="nama">
+                Email :
+                <input type="text" name="txtemail" id="email">
+                Alamat :
+                <input type="text" name="txtalamat" id="alamat" size="50">
+
+                <input type="submit" onclick="validasi()" value="kirim">
+                <input type="Reset" value="hapus">
+        </form>
+    </body>
+</html>

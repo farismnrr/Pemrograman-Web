@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fungsi JS</title>
+</head>
+<body>
+    
+</body>
+<script lang="javascript">
+    function kali(){
+        c = a * b
+        return c
+    }
+
+    function bagi(x, y){
+        z = x / y
+        return z
+    }
+
+    function hitungGenap(n) {
+        var jumlah = 0;
+        for (var i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                jumlah++;
+            }
+        }
+        return jumlah;
+    }
+
+    var a = 3;
+    var b = 6;
+    document.write('Hasil dari ', a, ' * ', b, ' = ', kali())
+    document.write('<br><br>')
+    document.write('Hasil dari ', b, ' / ', a, ' = ', bagi(b, a))
+    document.write('<br><br>')
+    document.write('Jumlah bilangan genap dari 1 sampai 10 adalah: ', hitungGenap(10))
+</script>
+</html>
